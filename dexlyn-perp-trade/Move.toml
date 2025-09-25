@@ -1,0 +1,25 @@
+[package]
+name = 'dexlyn-perp-trade'
+version = '1.0.0'
+
+[addresses]
+dexlyn = "_"
+
+[dependencies]
+common = { local = "../common" }
+core = {local = "../supra_oracle"}
+
+[dependencies.SupraFramework]
+git = 'https://github.com/Entropy-Foundation/aptos-core.git'
+subdir = 'aptos-move/framework/supra-framework'
+rev = "aptosvm-v1.16_supra-v1.4.2"
+
+[dependencies.AptosTokenObjects]
+git = 'https://github.com/Entropy-Foundation/aptos-core.git'
+subdir = 'aptos-move/framework/aptos-token-objects'
+rev = "aptosvm-v1.16_supra-v1.4.2"
+
+[dependencies.AptosStdlib]
+git = 'https://github.com/Entropy-Foundation/aptos-core.git'
+subdir = 'aptos-move/framework/aptos-stdlib'
+rev = "aptosvm-v1.16_supra-v1.4.2"
